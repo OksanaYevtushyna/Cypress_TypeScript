@@ -1,0 +1,27 @@
+{
+  "env": {
+    "baseUrl": "https://www.goodreads.com/user/sign_in",
+    "defaultCommandTimeout": 100000,
+    "chromeWebSecurity": false,
+    "requestTimeout": 70000,
+    "responseTimeout": 80000,
+    "pageLoadTimeout": 150000,
+    "trashAssetsBeforeRun": true,
+    "video": true,
+    "testFiles": ["e2e/Login.js"],
+    "viewportWidth": 1920,
+    "viewportHeight": 1080,
+    "reporter": "cypress-multi-reporters",
+    "reporterOptions": {
+      "reporterEnabled": "mochawesome",
+      "mochawesomeReporterOptions": {
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": true,
+        "html": true,
+        "json": false,
+        "video": true
+      }
+    }
+  }
+}
