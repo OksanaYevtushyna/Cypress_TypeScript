@@ -4,7 +4,7 @@ class BasicPage {
   }
   pageLogo = () => cy.get(".logo");
 
-  inputField = (fieldType) => cy.get(`[name="user[${fieldType}]"]`);
+  inputField = (fieldType: string) => cy.get(`[name="user[${fieldType}]"]`);
 
   loginBtn = () => cy.get('input[type="submit"]');
 }
